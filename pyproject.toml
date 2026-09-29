@@ -1,0 +1,28 @@
+[project]
+name = "ai-football-intelligence"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Satyam", email = "Satyamkhatiwada10@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "httpx>=0.28.1",
+    "langchain-groq>=1.1.3",
+    "langgraph>=1.2.12",
+    "pydantic>=2.13.5",
+    "pydantic-settings>=2.15.0",
+    "pytest>=9.1.1",
+    "python-dotenv>=1.2.3",
+    "pyyaml>=6.0.3",
+    "rich>=15.0.0",
+    "typer>=0.27.2",
+]
+
+[project.scripts]
+ai-football-intelligence = "ai_football_intelligence:main"
+
+[build-system]
+requires = ["uv_build>=0.12.19,<0.13.0"]
+build-backend = "uv_build"
