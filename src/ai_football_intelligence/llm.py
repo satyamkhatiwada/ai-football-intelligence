@@ -22,8 +22,6 @@ def call_llm(prompt: str, system: str | None = None) -> str:
         timeout=30.0,
     )
     if response.status_code != 200:
-        print("STATUS:", response.status_code)
-        print("BODY:", response.text)
-    response.raise_for_status()
+        raise RuntimeError(f"Groq API error {response.status_code}: {response.text}")
     data = response.json()
     return data["choices"][0]["message"]["content"]

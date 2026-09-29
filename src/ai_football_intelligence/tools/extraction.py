@@ -2,6 +2,8 @@ from __future__ import annotations
 import json
 from pydantic import BaseModel, ValidationError
 from ai_football_intelligence.llm import call_llm
+from ai_football_intelligence.records.models import Paper
+from ai_football_intelligence.memory.store import save
 
 
 class PaperExtraction(BaseModel):
@@ -35,3 +37,16 @@ def extract_paper_info(abstract: str) -> PaperExtraction:
         return PaperExtraction(**parsed)
     except (json.JSONDecodeError, ValidationError) as e:
         raise ValueError(f"Could not parse LLM output as valid extraction:\n{raw}") from e
+
+def enrich_paper(paper: Paper) -> Paper:
+    """Run LLM extraction on a paper's summary and persist the result onto the record."""
+    if not paper.summary:
+        raise ValueError(f"Paper {paper.id} has no summary to extract from")
+
+    info = extract_paper_info(paper.summary)
+    paper.method = info.method
+    paper.dataset = info.dataset
+    paper.limitation = info.limitation
+
+    save(paper)  # same id -> overwrites the same file, doesn't create a duplicate
+    return paper

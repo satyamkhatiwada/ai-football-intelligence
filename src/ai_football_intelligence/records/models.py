@@ -40,3 +40,16 @@ class Claim(BaseModel):
     evidence_ids: list[str] = []
     created_at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
     reviewed_note: str | None = None
+
+class Paper(BaseModel):
+    id: str = Field(default_factory=lambda: new_id("paper"))
+    title: str
+    authors: list[str] = []
+    year: int | None = None
+    url: str
+    source: str
+    summary: str | None = None
+    discovered_at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
+    method: str | None = None
+    dataset: str | None = None
+    limitation: str | None = None
