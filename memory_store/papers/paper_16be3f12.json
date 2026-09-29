@@ -1,0 +1,16 @@
+{
+  "id": "paper_16be3f12",
+  "title": "Optical tracking in team sports",
+  "authors": [
+    "Pegah Rahimian",
+    "Laszlo Toka"
+  ],
+  "year": 2022,
+  "url": "http://arxiv.org/abs/2204.04143v1",
+  "source": "arxiv",
+  "summary": "Sports analysis has gained paramount importance for coaches, scouts, and fans. Recently, computer vision researchers have taken on the challenge of collecting the necessary data by proposing several methods of automatic player and ball tracking. Building on the gathered tracking data, data miners are able to perform quantitative analysis on the performance of players and teams. With this survey, our goal is to provide a basic understanding for quantitative data analysts about the process of creating the input data and the characteristics thereof. Thus, we summarize the recent methods of optical tracking by providing a comprehensive taxonomy of conventional and deep learning methods, separately. Moreover, we discuss the preprocessing steps of tracking, the most common challenges in this domain, and the application of tracking data to sports teams. Finally, we compare the methods by their cost and limitations, and conclude the work by highlighting potential future research directions.",
+  "discovered_at": "2026-09-29T12:23:12.341989Z",
+  "method": "unknown",
+  "dataset": "unknown",
+  "limitation": "high cost of some tracking methods"
+}

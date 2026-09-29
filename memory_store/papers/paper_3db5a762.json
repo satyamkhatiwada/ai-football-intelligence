@@ -1,0 +1,17 @@
+{
+  "id": "paper_3db5a762",
+  "title": "Efficient tracking of team sport players with few game-specific annotations",
+  "authors": [
+    "Adrien Maglo",
+    "Astrid Orcesi",
+    "Quoc-Cuong Pham"
+  ],
+  "year": 2022,
+  "url": "http://arxiv.org/abs/2204.04049v1",
+  "source": "arxiv",
+  "summary": "One of the requirements for team sports analysis is to track and recognize players. Many tracking and reidentification methods have been proposed in the context of video surveillance. They show very convincing results when tested on public datasets such as the MOT challenge. However, the performance of these methods are not as satisfactory when applied to player tracking. Indeed, in addition to moving very quickly and often being occluded, the players wear the same jersey, which makes the task of reidentification very complex. Some recent tracking methods have been developed more specifically for the team sport context. Due to the lack of public data, these methods use private datasets that make impossible a comparison with them. In this paper, we propose a new generic method to track team sport players during a full game thanks to few human annotations collected via a semi-interactive system. Non-ambiguous tracklets and their appearance features are automatically generated with a detection and a reidentification network both pre-trained on public datasets. Then an incremental learning mechanism trains a Transformer to classify identities using few game-specific human annotations. Finally, tracklets are linked by an association algorithm. We demonstrate the efficiency of our approach on a challenging rugby sevens dataset. To overcome the lack of public sports tracking dataset, we publicly release this dataset at https://kalisteo.cea.fr/index.php/free-resources/. We also show that our method is able to track rugby sevens players during a full match, if they are observable at a minimal resolution, with the annotation of only 6 few seconds length tracklets per player.",
+  "discovered_at": "2026-09-29T12:23:12.341989Z",
+  "method": "Generic tracking method that uses a detection and reidentification network pre-trained on public datasets, trains a Transformer via incremental learning on few game-specific annotations to classify identities, and links tracklets with an association algorithm.",
+  "dataset": "Publicly released rugby sevens dataset (https://kalisteo.cea.fr/index.php/free-resources/).",
+  "limitation": "Requires a minimal resolution and only a few seconds of tracklets per player for effective tracking."
+}
