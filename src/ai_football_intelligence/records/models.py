@@ -53,3 +53,10 @@ class Paper(BaseModel):
     method: str | None = None
     dataset: str | None = None
     limitation: str | None = None
+
+class ReviewResult(BaseModel):
+    id: str = Field(default_factory=lambda: new_id("review"))
+    paper_id: str
+    passed: bool
+    problems: list[str] = []
+    reviewed_at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
