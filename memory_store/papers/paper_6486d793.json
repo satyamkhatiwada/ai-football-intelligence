@@ -1,0 +1,17 @@
+{
+  "id": "paper_6486d793",
+  "title": "A Monocular Vision System for Playing Soccer in Low Color Information Environments",
+  "authors": [
+    "Hafez Farazi",
+    "Philipp Allgeuer",
+    "Sven Behnke"
+  ],
+  "year": 2018,
+  "url": "http://arxiv.org/abs/1809.11078v1",
+  "source": "arxiv",
+  "summary": "Humanoid soccer robots perceive their environment exclusively through cameras. This paper presents a monocular vision system that was originally developed for use in the RoboCup Humanoid League, but is expected to be transferable to other soccer leagues. Recent changes in the Humanoid League rules resulted in a soccer environment with less color coding than in previous years, which makes perception of the game situation more challenging. The proposed vision system addresses these challenges by using brightness and texture for the detection of the required field features and objects. Our system is robust to changes in lighting conditions, and is designed for real-time use on a humanoid soccer robot. This paper describes the main components of the detection algorithms in use, and presents experimental results from the soccer field, using ROS and the igus Humanoid Open Platform as a testbed. The proposed vision system was used successfully at RoboCup 2015.",
+  "discovered_at": "2026-09-29T15:42:20.909923Z",
+  "method": "Monocular vision system using brightness and texture for detection of field features and objects",
+  "dataset": "Experimental results from soccer field using ROS and the igus Humanoid Open Platform as a testbed",
+  "limitation": "System was only tested on the igus Humanoid Open Platform, limiting generalizability to other robot platforms"
+}

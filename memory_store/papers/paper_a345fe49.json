@@ -1,0 +1,21 @@
+{
+  "id": "paper_a345fe49",
+  "title": "Quasi-Dense Similarity Learning for Multiple Object Tracking",
+  "authors": [
+    "Jiangmiao Pang",
+    "Linlu Qiu",
+    "Xia Li",
+    "Haofeng Chen",
+    "Qi Li",
+    "Trevor Darrell",
+    "Fisher Yu"
+  ],
+  "year": 2020,
+  "url": "http://arxiv.org/abs/2006.06664v4",
+  "source": "arxiv",
+  "summary": "Similarity learning has been recognized as a crucial step for object tracking. However, existing multiple object tracking methods only use sparse ground truth matching as the training objective, while ignoring the majority of the informative regions on the images. In this paper, we present Quasi-Dense Similarity Learning, which densely samples hundreds of region proposals on a pair of images for contrastive learning. We can directly combine this similarity learning with existing detection methods to build Quasi-Dense Tracking (QDTrack) without turning to displacement regression or motion priors. We also find that the resulting distinctive feature space admits a simple nearest neighbor search at the inference time. Despite its simplicity, QDTrack outperforms all existing methods on MOT, BDD100K, Waymo, and TAO tracking benchmarks. It achieves 68.7 MOTA at 20.3 FPS on MOT17 without using external training data. Compared to methods with similar detectors, it boosts almost 10 points of MOTA and significantly decreases the number of ID switches on BDD100K and Waymo datasets. Our code and trained models are available at http://vis.xyz/pub/qdtrack.",
+  "discovered_at": "2026-09-29T15:34:05.059676Z",
+  "method": null,
+  "dataset": null,
+  "limitation": null
+}

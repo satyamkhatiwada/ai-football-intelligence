@@ -1,0 +1,22 @@
+{
+  "id": "paper_508f67ca",
+  "title": "COST: Contrastive One-Stage Transformer for Vision-Language Small Object Tracking",
+  "authors": [
+    "Chunhui Zhang",
+    "Li Liu",
+    "Jialin Gao",
+    "Xin Sun",
+    "Hao Wen",
+    "Xi Zhou",
+    "Shiming Ge",
+    "Yanfeng Wang"
+  ],
+  "year": 2025,
+  "url": "http://arxiv.org/abs/2504.01321v1",
+  "source": "arxiv",
+  "summary": "Transformer has recently demonstrated great potential in improving vision-language (VL) tracking algorithms. However, most of the existing VL trackers rely on carefully designed mechanisms to perform the multi-stage multi-modal fusion. Additionally, direct multi-modal fusion without alignment ignores distribution discrepancy between modalities in feature space, potentially leading to suboptimal representations. In this work, we propose COST, a contrastive one-stage transformer fusion framework for VL tracking, aiming to learn semantically consistent and unified VL representations. Specifically, we introduce a contrastive alignment strategy that maximizes mutual information (MI) between a video and its corresponding language description. This enables effective cross-modal alignment, yielding semantically consistent features in the representation space. By leveraging a visual-linguistic transformer, we establish an efficient multi-modal fusion and reasoning mechanism, empirically demonstrating that a simple stack of transformer encoders effectively enables unified VL representations. Moreover, we contribute a newly collected VL tracking benchmark dataset for small object tracking, named VL-SOT500, with bounding boxes and language descriptions. Our dataset comprises two challenging subsets, VL-SOT230 and VL-SOT270, dedicated to evaluating generic and high-speed small object tracking, respectively. Small object tracking is notoriously challenging due to weak appearance and limited features, and this dataset is, to the best of our knowledge, the first to explore the usage of language cues to enhance visual representation for small object tracking. Extensive experiments demonstrate that COST achieves state-of-the-art performance on five existing VL tracking datasets, as well as on our proposed VL-SOT500 dataset. Source codes and dataset will be made publicly available.",
+  "discovered_at": "2026-09-29T15:34:05.059676Z",
+  "method": null,
+  "dataset": null,
+  "limitation": null
+}

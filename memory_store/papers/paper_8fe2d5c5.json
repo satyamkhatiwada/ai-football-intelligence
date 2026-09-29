@@ -1,0 +1,22 @@
+{
+  "id": "paper_8fe2d5c5",
+  "title": "Underwater Camouflaged Object Tracking Meets Vision-Language SAM2",
+  "authors": [
+    "Chunhui Zhang",
+    "Li Liu",
+    "Guanjie Huang",
+    "Zhipeng Zhang",
+    "Hao Wen",
+    "Xi Zhou",
+    "Shiming Ge",
+    "Yanfeng Wang"
+  ],
+  "year": 2024,
+  "url": "http://arxiv.org/abs/2409.16902v5",
+  "source": "arxiv",
+  "summary": "Over the past decade, significant progress has been made in visual object tracking, largely due to the availability of large-scale datasets. However, these datasets have primarily focused on open-air scenarios and have largely overlooked underwater animal tracking-especially the complex challenges posed by camouflaged marine animals. To bridge this gap, we take a step forward by proposing the first large-scale multi-modal underwater camouflaged object tracking dataset, namely UW-COT220. Based on the proposed dataset, this work first comprehensively evaluates current advanced visual object tracking methods, including SAM- and SAM2-based trackers, in challenging underwater environments, \\eg, coral reefs. Our findings highlight the improvements of SAM2 over SAM, demonstrating its enhanced ability to handle the complexities of underwater camouflaged objects. Furthermore, we propose a novel vision-language tracking framework called VL-SAM2, based on the video foundation model SAM2. Extensive experimental results demonstrate that the proposed VL-SAM2 achieves state-of-the-art performance across underwater and open-air object tracking datasets. The dataset and codes are available at~{\\color{magenta}{https://github.com/983632847/Awesome-Multimodal-Object-Tracking}}.",
+  "discovered_at": "2026-09-29T15:34:05.059676Z",
+  "method": null,
+  "dataset": null,
+  "limitation": null
+}
